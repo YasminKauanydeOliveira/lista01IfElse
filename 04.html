@@ -1,0 +1,15 @@
+<script>
+
+    //Entrada
+
+    const primeiraNota = Number(prompt(`Qual a primeira nota do "little brother"?`));
+    const segundaNota = Number(prompt(`Qual a nota do "little brother" depois da ajuda do "big brother"?`));
+    let acrescimo = (segundaNota - primeiraNota) / 4;
+
+    if (segundaNota > primeiraNota) {
+        alert(`A nota do "Big brother" terá um acrecimo de ${acrescimo} pontos.`);
+
+    } else {
+        alert(`A nota do "Big brother" não terá nenhum acréscimo`);
+    }
+</script>

@@ -1,0 +1,33 @@
+<script>
+    let hmf = prompt("Em qual hemisfério você está? ( N-Norte e S-Sul)");
+    let mes = Number(prompt("Digite o mês em que você está. Por exemplo, 1- janeiro, 2- fevereiro, 3- março..."));
+
+    if (hmf == "S") {
+        if (mes == 1 || mes == 2 || mes == 3) {
+            alert(`É verão!`);
+        }
+    }
+    else if (mes == 4 || mes == 5 || mes == 6) {
+        alert(`É outono!`);
+    }
+    else if (mes == 7 || mes == 8 || mes == 9) {
+        alert(`É inverno!`);
+    }
+    else if (mes == 10 || mes == 11 || mes == 12) {
+        alert(`É primavera!`);
+    }
+    else if (hmf == "N") {
+        if (mes == 4 || mes == 5 || mes == 6) {
+            alert(`É primavera!`);
+        }
+        else if (mes == 7 || mes == 8 || mes == 9) {
+            alert(`É verão!`);
+        }
+        else if (mes == 10 || mes == 11 || mes == 12) {
+            alert(`É outono!`);
+        }
+        else if (mes == 1 || mes == 2 || mes == 3) {
+            alert(`É inverno!`);
+        }
+    }
+</script>

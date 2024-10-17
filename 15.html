@@ -1,0 +1,13 @@
+<script>
+    let num = Number(prompt(`Digite um número:`).replace(",", "."));
+
+    if (Number.isInteger(num)) {
+        alert(`O número é inteiro.`);
+    }
+    else if (!Number.isInteger(num)) {
+        alert(`O número é decimal.`);
+    }
+    else {
+        alert(`Valor inválido!`)
+    }
+</script>

@@ -1,0 +1,21 @@
+<script>
+    let lado1 = Number(prompt(`Informe o primeiro lado do triângulo:`));
+    let lado2 = Number(prompt(`Informe o segundo lado do trinângulo:`));
+    let lado3 = Number(prompt(`Informe o terceiro lado:`));
+
+    if (lado1 + lado2 > lado3 && lado1 + lado3 > lado2 && lado2 + lado3 > lado1) {
+        if (lado1 == lado2 && lado2 == lado3) {
+            alert(`É um triângulo equilátero.`);
+        }
+        else if (lado1 == 2 || lado1 == lado3 || lado2 == lado3) {
+            alert(`É um triângulo isósceles.`);
+        }
+        else {
+            alert(`É um triângulo escaleno.`);
+        }
+    }
+    else {
+        alert(`Os lados NÃO formam um triângulo`);
+    }
+    
+</script>

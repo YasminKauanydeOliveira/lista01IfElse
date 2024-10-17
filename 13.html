@@ -1,0 +1,24 @@
+<script>
+    let nota = Number(prompt(`Informe sua nota:`));
+
+
+    if (nota < 0 || nota > 10) {
+        alert(`Valor inválido`);
+    }
+    if (nota >= 9.0 && nota <= 10) {
+        alert(`Conceito: A`);
+    }
+    else if (nota >= 8.9 && nota < 8) {
+        alert(`Conceito: B`);
+    }
+    else if (nota >= 7.9 && nota < 7) {
+        alert(`Conceito: C`);
+    }
+    else if (nota >= 6.9 && nota < 6) {
+        alert(`Conceito D`);
+    } else {
+        alert("Conceito: E");
+    }
+
+
+</script>
